@@ -19,6 +19,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s linear;
+  user-select: none;
+}
+.card:hover {
+  z-index: 10;
 }
 
 .card .suit {
@@ -27,11 +32,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.8;
 }
 
 .card .rank {
   font-size: 30px;
+  font-weight: 600;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -40,9 +45,10 @@ body {
 .card-button {
   background-color: transparent;
   border: none;
-  color: #333;
+  color: #fff;
   cursor: pointer;
   font-size: 18px;
+  font-weight: 400;
   padding: 0;
 }
 
