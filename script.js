@@ -21,7 +21,6 @@ function dealCard() {
 
     const rankElement = document.createElement("div");
     rankElement.classList.add("rank");
-    rankElement.textContent = card.rank;
 
     switch (card.suit) {
       case "♥":
@@ -38,7 +37,7 @@ function dealCard() {
 
       case "♣":
         suitElement.textContent = "♣";
-        suitElement.style.color = "darkgreen";
+        suitElement.style.color = "#444444";
         rankElement.textContent = card.rank;
         break;
 
